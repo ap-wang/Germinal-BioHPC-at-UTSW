@@ -7,8 +7,8 @@ This guide details the specific workflow for deploying the Germinal generative a
 1. Storage Routing (if needed due to home2 storage) & Environment Setup:
 BioHPC limits /home2/ storage. Germinal requires large packages(PyTorch, JAX, HuggingFace models) that may exceed standard quotas (especially if you have many conda envs already set up). In this workflow, all environments and caches are routed to /project/ space (where there is more storage).
 
-# 1. Define your shared project path (Adjust as necessary) 
-    export PROJECT_DIR=/project/SCCC/Siegwart_lab/shared (change the path to your corresponding lab)
+# 1. Define your shared project path (change the path to your corresponding lab)
+    export PROJECT_DIR=/project/SCCC/Siegwart_lab/shared 
 
 # 2. Clone the Germinal repository
     cd $PROJECT_DIR
